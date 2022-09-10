@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  background-image: url("../public//pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    background-image: url("../public//pattern-background-desktop.svg");
+    background-size: contain;
+    background-position-y: 0;
+  }
+}
